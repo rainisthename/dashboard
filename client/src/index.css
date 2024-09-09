@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Mona Regular";
+  src: url("../public/fonts/MonaSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Mona Bold";
+  src: url("../public/fonts/MonaSans-Bold.ttf");
+}
+
+
+@font-face {
+  font-family: "Mona SemiBold";
+  src: url("../public/fonts/MonaSans-SemiBold.ttf");
+}
+
+
+@font-face {
+  font-family: "Mona Medium";
+  src: url("../public/fonts/MonaSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Mona Black";
+  src: url("../public/fonts/MonaSans-Black.ttf");
+}
+
+@font-face {
+  font-family: "Mona ExtraBold";
+  src: url("../public/fonts/MonaSans-ExtraBold.ttf");
+}
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
