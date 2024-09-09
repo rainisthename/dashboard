@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Modal from "./Modal";
 import UpdateModal from "./UpdateModal"; // Import the new UpdateModal component
 import { fetchTickets } from '../functions/getTickets';
+import { FaSpinner } from 'react-icons/fa';
 
 const TicketTable = () => {
   const [isModalOpen, setIsModalOpen] = useState(false); // For the Add Ticket modal
@@ -32,7 +33,13 @@ const TicketTable = () => {
     loadTickets();
   }, []);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) {
+    return (
+        <div className="flex items-center justify-center min-h-screen">
+            <FaSpinner className="animate-spin text-blue-500 text-4xl" />
+        </div>
+    );
+}
 
   // Sorting function
   const sortedTickets = [...tickets].sort((a, b) => {
