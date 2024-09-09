@@ -4,7 +4,7 @@ import axios from 'axios';
 
 export const fetchTickets = async () => {
   try {
-    const response = await axios.get('http://localhost:3500/api/ticket');
+    const response = await axios.get('https://dashboard-n5mz1bbik-caletinamarklestergmailcoms-projects.vercel.app/api/ticket');
 
     console.log("response", response)
 
