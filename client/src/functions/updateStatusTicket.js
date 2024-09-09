@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const updateTicketStatus = async (ticketId, ticketData) => {
     try {
-      const response = await axios.put(`https://dashboard-n5mz1bbik-caletinamarklestergmailcoms-projects.vercel.app/api/ticket/status/${ticketId}`, ticketData);
+      const response = await axios.put(`https://dashboard-ecru-chi.vercel.app/api/ticket/status/${ticketId}`, ticketData);
   
       if (response.data) {
         console.log('Ticket updated successfully:', response.data);

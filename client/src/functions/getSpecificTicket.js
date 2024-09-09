@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const fetchTicketById = async (ticketId) => {
     try {
-      const response = await axios.get(`https://dashboard-n5mz1bbik-caletinamarklestergmailcoms-projects.vercel.app/api/ticket/${ticketId}`);
+      const response = await axios.get(`https://dashboard-ecru-chi.vercel.app/api/ticket/${ticketId}`);
   
       if (response.data) {
         const ticket = response.data;

@@ -4,7 +4,7 @@ import axios from 'axios';
 export const createTicket = async (ticketData) => {
     try {
       // Ensure ticketData follows the expected format
-      const response = await axios.post('https://dashboard-dgqoknh1i-caletinamarklestergmailcoms-projects.vercel.app/api/ticket', ticketData);
+      const response = await axios.post('https://dashboard-ecru-chi.vercel.app/api/ticket', ticketData);
   
       console.log("response", response);
   

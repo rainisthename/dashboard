@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const deleteTicket = async (ticketId, ticketData) => {
     try {
-      const response = await axios.delete(`https://dashboard-n5mz1bbik-caletinamarklestergmailcoms-projects.vercel.app/api/ticket/${ticketId}`);
+      const response = await axios.delete(`https://dashboard-ecru-chi.vercel.app/api/ticket/${ticketId}`);
   
       if (response.data) {
         console.log('Ticket updated successfully:', response.data);
